@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://kit.fontawesome.com/1ead4a78b9.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- create a container where user can input username and select room -->
+    <div class="container">
+      <header>
+        <!-- add in image of buzzer -->
+        <i class="fas fa-bell"></i>
+        <div class="title">The Buzzer Gameshow!</div>
+      </header>
+      <main>
+        <div class="form">
+          <form action="/" method="POST">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your username"
+                required
+              />
+
+              <label for="room">Room</label>
+              <select name="room" id="room" required>
+                <option value="">Select a room</option>
+                <option value="1">Room 1</option>
+                <option value="2">Room 2</option>
+                <option value="3">Room 3</option>
+                <option value="4">Room 4</option>
+                <option value="5">Room 5</option>
+              </select>
+              <!-- join room button -->
+              <br>
+              <button type="submit" class="btn" name="join">Join</button>
+    </div>
+  </body>
+</html>
